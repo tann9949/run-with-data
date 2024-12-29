@@ -1,0 +1,6 @@
+garminconnect
+matplotlib
+numpy
+pandas
+folium
+tqdm
