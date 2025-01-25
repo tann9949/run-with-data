@@ -1,6 +1,6 @@
 # 🏃‍♂️ Run with Data
 
-A Python package for analyzing running data from Garmin Connect, with a focus on comparing different running power metrics (Stryd, Garmin, RunPowerModel).
+A Python package for analyzing running data from Garmin Connect, with a focus on comparing different running power metrics (Stryd, Garmin, RunPowerModel). This code is also showed just for transparency on how data was gathered and was posted to my Facebook page: [Run with Data](https://www.facebook.com/people/Run-with-data/61571758243398/).
 
 ## 🛠️ Features
 
@@ -57,6 +57,9 @@ power_indices = get_power_indices(activity)
 stryd_power = activity.run_metrics[power_indices["stryd"]].value
 garmin_power = activity.run_metrics[power_indices["garmin"]].value
 rpm_power = activity.run_metrics[power_indices["runpowermodel"]].value
+
+# get dataframe from run
+df = activity.load_df(client)
 ```
 
 ## 🌐 Project Structure
@@ -65,7 +68,9 @@ rpm_power = activity.run_metrics[power_indices["runpowermodel"]].value
   - `client/` - API client implementations
   - `data_field/` - Data field definitions for different metrics
   - `schema/` - Data models and schemas
+  - `font/` - Store brand's font (Open Sauce).
   - `utils.py` - Utility functions
+  - `style.py` - Store matplotlib plot style that corresponded to page CI.
 
 ## 📊 Dependencies
 
