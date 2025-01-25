@@ -3,4 +3,5 @@ matplotlib
 numpy
 pandas
 folium
+seaborn
 tqdm

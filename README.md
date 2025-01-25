@@ -1,4 +1,4 @@
-# 🏃‍♂️ Running Dot
+# 🏃‍♂️ Run with Data
 
 A Python package for analyzing running data from Garmin Connect, with a focus on comparing different running power metrics (Stryd, Garmin, RunPowerModel).
 
